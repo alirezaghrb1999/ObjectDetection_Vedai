@@ -25,3 +25,9 @@ The image above illustrates the results of the Retina model on the test data. In
 <br/>
 <br/>
 
+The Yolo architecture differs from previous networks that divided images into different regions to check the probability of object presence in certain regions. Yolo performs training on the entire input image using a convolutional neural network and can predict multiple boxes for each image. The input image is divided into S × S parts, and if an object's center falls on one of these parts, that part is responsible for detecting the corresponding object. Each part predicts the number B of the box, which includes the probability of object presence in that part of the box, as well as the defining coordinates of the box. This architecture defines each square by six numbers: pc, bx, by, bh, bw, and c. Pc represents the confirmation coefficient of object presence in that part, while c is a vector indicating the probability of that object belonging to different classes. Pc and c are related in that pc indicates the probability of object presence in a certain part, and c indicates the probability of the object belonging to different classes. The Yolov5 model is a member of the Yolo family and is suitable for real-time applications due to its unique architecture. It offers several options, ranging from small models with few parameters to models with many parameters suitable for working on complex and extensive data.
+<br/>
+<br/>
+![Capture](https://github.com/alirezaghrb1999/ObjectDetection_Vedai/assets/46087111/fc9d422f-8264-417b-950d-5aa583810b8b)
+<br/>
+An example of Yolo model output on test data: The model has performed much better than the Retina network in recognizing more difficult data.
