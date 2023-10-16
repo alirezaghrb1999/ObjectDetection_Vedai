@@ -31,3 +31,14 @@ The Yolo architecture differs from previous networks that divided images into di
 ![Capture](https://github.com/alirezaghrb1999/ObjectDetection_Vedai/assets/46087111/fc9d422f-8264-417b-950d-5aa583810b8b)
 <br/>
 An example of Yolo model output on test data: The model has performed much better than the Retina network in recognizing more difficult data.
+
+<br/>
+<br/>
+
+In this section, we conducted an evaluation of various models used in this project. Choosing the best model for a given dataset and real-world applications can be a challenging task, and it requires careful consideration of factors such as accuracy and speed. In some cases, even minor changes in the model's parameters can lead to a significant reduction in accuracy. Conversely, larger changes that improve speed may not have a significant impact on accuracy. Therefore, it is essential to strike a balance between these two factors when selecting a model. 
+Another challenge is finding the right parameters for batch size and the number of training rounds. These parameters can have a significant impact on the model's performance and should be carefully considered. 
+here, we explored various techniques, such as transfer learning and testing models with different sizes, to make them more suitable for real-time applications. We also investigated other factors that could affect the model's accuracy and speed. The results of our evaluation and comparison of different models are presented in Table below. It is worth noting that the region-based model, R-CNN, was not suitable for object detection due to its poor performance on the available training data. Therefore, we compared Retina and Yolo models instead. 
+<br/>
+<br/>
+![Capture](https://github.com/alirezaghrb1999/ObjectDetection_Vedai/assets/46087111/4d8f0c2b-1e65-4ebb-8fc5-80bb45020b59)
+<br/>
